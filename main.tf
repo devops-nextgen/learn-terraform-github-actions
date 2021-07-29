@@ -15,7 +15,7 @@ terraform {
     organization = "Devops-nextgen"
 
     workspaces {
-      name = "Terraform-integration-GitHub-Actions"
+      name = "Terraform-integration-GitHubActions"
     }
   }
 }

@@ -2,7 +2,7 @@ terraform {
   required_providers {
     aws = {
       source  = "hashicorp/aws"
-      version = "3.26.0"
+      version = "3.51.0"
     }
     random = {
       source  = "hashicorp/random"
@@ -12,17 +12,17 @@ terraform {
   required_version = ">= 0.14"
 
   backend "remote" {
-    organization = "REPLACE_ME"
+    organization = "Devops-nextgen"
 
     workspaces {
-      name = "gh-actions-demo"
+      name = "Terraform-integration-GitHubActions"
     }
   }
 }
 
 
 provider "aws" {
-  region = "us-west-2"
+  region = "ap-south-1"
 }
 
 
